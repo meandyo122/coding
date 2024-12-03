@@ -8,7 +8,7 @@ def home():
 
 @app.route('/next')
 def next_page():
-    return "<h1>Welcome to the next page!</h1>"
+    return render_template('next.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
